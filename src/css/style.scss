@@ -1,0 +1,78 @@
+@import './css-reset.scss';
+*{
+    box-sizing: border-box;
+
+}
+html{
+    width: 375px;
+    padding: 4rem 2rem 2rem ;
+    font-family: 'Titillium Web', sans-serif;
+}
+main{
+    height: 100vh;
+}
+// input styles
+.input{
+   text-align: center;
+   .input-value{
+       padding: 0.75rem;
+       width: 230px;
+       outline: none;
+       border:1px solid orangered;
+       border-radius: 10px;
+       font-family: 'Titillium Web', sans-serif;
+       
+       
+    }
+    .input-value::placeholder{
+        font-size: 1rem;
+        color: orangered;
+    }
+    .button{
+        padding: 0.75rem;
+        outline: none;
+        border:1px solid orangered;
+        border-radius: 10px;
+        background-color: palegreen;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .submit[type=submit] {
+        color: #ff4500;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+}
+.forecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    color: orangered;
+   
+    
+    
+    .forecast-view{
+        display: flex;
+        align-items: center;
+        .desc{
+            font-size: 1.2rem;
+            margin-right:10px;
+            
+        }
+        .weather-icon{
+            width: 50px;
+            height: 50px;
+            color: orangered;
+
+        }
+    }
+    .temp{
+        font-size: 3rem;
+    }
+    .city{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    
+}
